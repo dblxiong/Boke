@@ -1,0 +1,22 @@
+[project]
+name = "mt5-copier"
+version = "0.2.0"
+description = "Desktop MT5 trade copier"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2",
+]
+
+[project.scripts]
+mt5-copier = "copier.main:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
